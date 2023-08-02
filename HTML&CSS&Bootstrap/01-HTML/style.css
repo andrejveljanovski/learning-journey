@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main {
+  background-color: #638caa;
+}
+
+.applelogo {
+  width: 30px;
+  margin-left: 80px;
+}
+
+.item-inner {
+  float: left;
+  width: 50%;
+  padding: 30px;
+  text-align: center;
+}
+.item-inner2 {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.item-inner2 .navbar {
+  padding: 3px;
+}
+
+.clear {
+  clear: both;
+}
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li:not(:last-child) {
+  margin-right: 10px;
+}
+.navbar {
+  margin-top: 10px;
+  margin-left: 150px;
+}
+.appledevices {
+  display: block;
+  margin: 0 auto;
+}
+
+.innerlogos {
+  float: left;
+  width: 25%;
+  min-height: 100px;
+  padding-top: 10px;
+}
+.innerlogos p {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.fs i {
+  font-size: 4rem;
+}
+.c-pink {
+  background-color: #dbdbdb;
+}
+.logos {
+  margin-top: 10px;
+  text-align: center;
+}
+.c-brown {
+  background-color: #bcb9aa;
+}
+.c-lightblue {
+  background-color: #9ce0d1;
+}
+.c-purple {
+  background-color: #9aa7b8;
+}
+.c-blue {
+  background-color: #b7ced6;
+}
+.bgc-orange {
+  background-color: #f09e84;
+}
+.bgc-orange p {
+  padding-bottom: 40px;
+}
+.sectioninner {
+  float: left;
+  width: 33.333%;
+  height: 130px;
+  padding: 10px;
+}
+.sectioninner p {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.section {
+  text-align: center;
+}
+
+.socialmedia ul li {
+  display: inline-block;
+  font-size: 2rem;
+}
+.socialmedia ul li:not(:last-child) {
+  margin-right: 80px;
+}
+.socialmedia {
+  text-align: center;
+  padding: 20px;
+}
+.footer {
+  background-color: #514354;
+  height: 25px;
+  text-align: center;
+}
+.mediasocial {
+  margin-top: 15px;
+}
+.c-white {
+  color: rgb(255, 255, 255);
+}
+.links {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.ipad {
+  overflow: hidden;
+  background-color: #9aa7b8;
+}
+.iphone {
+  overflow: hidden;
+  background-color: #bcb9aa;
+}
+.imgdimension {
+  width: 300px;
+}
+.mgb {
+  margin-bottom: 70px;
+}
+.navbar li a:hover {
+  color: #bcb9aa;
+  text-decoration: underline red;
+}

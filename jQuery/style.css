@@ -1,0 +1,187 @@
+#race {
+  text-align: center;
+  background-color: #242021;
+}
+.d-flex {
+  display: flex;
+}
+
+h1,
+h2,
+h3 {
+  color: #a2a2a2;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 35px;
+  text-align-last: left;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.raceTrack {
+  background: url(./images/raceTrack.jpg) repeat center / contain;
+  height: 450px;
+  position: relative;
+  margin-top: 3rem;
+  text-align: left;
+  overflow: hidden;
+}
+.race-track-darken {
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.car1,
+.car2 {
+  width: 300px;
+}
+
+.results {
+  color: white;
+  display: flex;
+  margin-top: 50px;
+}
+.container-1 {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-2 {
+  width: 50%;
+}
+.result-cont {
+  border: 1px solid white;
+  padding: 20px;
+  font-size: 15px;
+}
+.container-2 p {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid white;
+  margin-bottom: 0;
+  padding: 20px 0;
+}
+.counter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 100px;
+  z-index: 1;
+}
+.car-1-title {
+  color: #ffebf7;
+}
+.car-2-title {
+  color: #ba0000;
+}
+
+.car-2 {
+  margin-top: -120px;
+}
+.results span {
+  font-size: 20px;
+  font-weight: bold;
+}
+button {
+  font-size: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: transparent;
+  color: #ffebf7;
+  border: 2px solid #ffebf7;
+  border-radius: 5px;
+  margin: 5px;
+}
+.finishLine {
+  height: 250px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.result-cont-2 span,
+.car-2-last-race span {
+  color: #ba0000;
+}
+@media screen and (max-width: 768px) {
+  .raceTrack img {
+    width: 170px;
+  }
+  .car-2 {
+    margin-top: 60px;
+  }
+  .car-1 {
+    margin-top: 80px;
+  }
+  .car-1-last-race,
+  .car-2-last-race {
+    font-size: 12px;
+  }
+  span {
+    font-size: 15px;
+  }
+  .finishLine {
+    height: 150px;
+    width: 200px;
+  }
+}
+@media (max-width: 426px) {
+  .raceTrack img {
+    width: 130px;
+  }
+  .car-1 {
+    margin-top: 100px;
+  }
+  .car-2 {
+    margin-top: 20px;
+  }
+  .results {
+    display: block;
+  }
+  .container-1 {
+    width: 90%;
+  }
+  .container-2 {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+  }
+  .container-2 .inner-container {
+    margin-top: 30px;
+    display: flex;
+  }
+  .counter {
+    top: 40%;
+  }
+  .finishLine {
+    top: 45%;
+    height: 100px;
+    width: 150px;
+  }
+  h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  button {
+    font-size: 15px;
+  }
+}

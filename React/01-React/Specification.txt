@@ -1,0 +1,10 @@
+You will have to create an adventure blog application with React. There is data for the places in the db.json file
+The page should be responsive for laptop, tablet and mobile devices (you can check the images that are in the screenshots folder).
+For all the images use picsum images. The design should be made with components, meaning you need to have 4
+components: 
+- banner - image with centered content.
+- details-block - text on the left, image on the right (you need to make 2 variations from this component with different titles & images)
+- places-container - the section that contains all the place components(for all the places info you should use the data that is inside the db.json
+file)
+- place - individual place component that will be shown in the places-container (image, title, text)
+- footer - list at the bottom

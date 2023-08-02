@@ -1,0 +1,84 @@
+@use "./variables" as var;
+@use "sass:math";
+
+// RESPONSIVE LAPTOP FIRST DESIGN MIXINS
+@mixin four-k-styles {
+  @media (max-width: 2560px) {
+    @content;
+  }
+}
+
+@mixin laptop-l-styles {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin laptop-m-styles {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tablet-styles {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile-l-styles {
+  @media (max-width: 426px) {
+    @content;
+  }
+}
+
+@mixin mobile-m-styles {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin mobile-s-styles {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+
+%wrap {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%wrap-small {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin link-decoration {
+  color: var.$text-color-base;
+}
+
+%marginbot {
+  margin-bottom: 1rem;
+}
+
+%capitalize {
+  text-transform: capitalize;
+}
+
+%uppercase {
+  text-transform: uppercase;
+}
+
+%gutter {
+  padding-top: var.$gutter-base * 2;
+  padding-bottom: var.$gutter-base * 2;
+}
+%line-properties {
+  height: 2px;
+  width: 150px;
+  background-color: var.$text-color-terciary;
+  margin: 0 auto 2rem auto;
+}

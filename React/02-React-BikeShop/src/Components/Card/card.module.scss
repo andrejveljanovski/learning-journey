@@ -1,0 +1,15 @@
+.cardContent {
+  background-color: #feb807;
+}
+
+.card {
+  img {
+    object-fit: contain;
+  }
+  &:hover {
+    img {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+}

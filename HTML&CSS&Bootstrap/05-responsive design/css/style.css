@@ -1,0 +1,213 @@
+.section-three .icons, .section-three .form, .section-two, nav {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-three .text, .section-two .text {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer .links, .section-one h1, .section-one p {
+  margin-bottom: 1rem;
+}
+
+.section-two .text h2, nav .menu, .section-one h1 {
+  text-transform: capitalize;
+}
+
+.footer p, nav .logo, .section-one a {
+  text-transform: uppercase;
+}
+
+.section-three, .section-three .icons, .section-two {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+
+.section-three .line, .section-two .line {
+  height: 2px;
+  width: 150px;
+  background-color: #37a0f3;
+  margin: 0 auto 2rem auto;
+}
+
+.section-one {
+  background: url(../starter-files/images/hero.jpg) no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.section-one p {
+  font-size: 1.5rem;
+}
+.section-one a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: #37a0f3;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+nav .menu a:not(:last-child) {
+  margin-right: 1rem;
+}
+@media (max-width: 426px) {
+  nav {
+    flex-direction: column;
+  }
+  nav .logo {
+    align-self: center;
+    margin-bottom: 1rem;
+  }
+  nav .menu {
+    align-self: center;
+  }
+}
+
+.section-two .text {
+  text-align: center;
+}
+.section-two .text {
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+}
+.section-two img {
+  height: 300px;
+  width: 100%;
+}
+.section-two .pictures {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-two .pictures .flex30 {
+  flex-basis: 30%;
+}
+.section-two .pictures .flex70 {
+  flex-basis: 70%;
+}
+.section-two .pictures .margin {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+@media (max-width: 768px) {
+  .section-two .pictures {
+    flex-direction: column;
+    height: auto;
+  }
+  .section-two .pictures .margin {
+    margin-right: 0;
+  }
+}
+
+.section-three {
+  background-color: #f7f7f7;
+}
+.section-three .text {
+  text-align: center;
+}
+.section-three .icons {
+  display: flex;
+  text-align: center;
+}
+.section-three .icons i {
+  color: #37a0f3;
+  font-size: 1.5rem;
+}
+.section-three .icons .photo,
+.section-three .icons .web,
+.section-three .icons .content {
+  padding: 2rem;
+}
+.section-three .form {
+  text-align: center;
+}
+.section-three .form .btn {
+  background-color: #37a0f3;
+  padding: 0.6rem;
+  border-color: #37a0f3;
+  color: #fff;
+}
+.section-three .form .email {
+  padding: 0.5rem;
+  width: 300px;
+}
+@media (max-width: 768px) {
+  .section-three .icons {
+    flex-direction: column;
+  }
+  .section-three .email {
+    margin-bottom: 1rem;
+  }
+  .section-three .btn {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.footer {
+  background-color: #414a4f;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .links a {
+  color: #f7f7f7;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.footer .links a:not(:last-child) {
+  margin-right: 1rem;
+}
+.footer p {
+  text-align: center;
+  color: rgba(247, 247, 247, 0.7254901961);
+}
+.footer p span {
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

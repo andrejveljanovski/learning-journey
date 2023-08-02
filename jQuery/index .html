@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Car racing game</title>
+    <meta name="keywords" content="html,css,lekcii" />
+    <meta name="description" content="ova e strana za ucenje" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Latest compiled and minified BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Font-awesome 4.7 cdn -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body id="race">
+    <!-- write your code here -->
+    <h1>Car racing game</h1>
+    <button class="start">Race!</button>
+    <button class="reset">Start over</button>
+
+    <div class="raceTrack">
+      <div class="car1">
+        <img src="./images/car1.gif" alt="" class="cars car-1" />
+      </div>
+      <div class="car2 cars">
+        <img src="./images/car2.gif" alt="" class="cars car-2" />
+      </div>
+    </div>
+    <h1 class="counter">3</h1>
+    <img src="./images/finish.gif" class="finishLine" alt="" />
+    <div class="results">
+      <div class="container-1">
+        <div class="inner-container car-1-res">
+          <h3 class="car-1-title">Car 1</h3>
+          <div class="result-car-1"></div>
+        </div>
+        <div class="inner-container car-2-res">
+          <h3 class="car-2-title">Car 2</h3>
+          <div class="result-car-2"></div>
+        </div>
+      </div>
+      <div class="container-2">
+        <h3>Results from the previous time you played this game</h3>
+        <div class="inner-container">
+          <div id="car1Last" class="car-1-last-race"></div>
+          <div id="car2Last" class="car-2-last-race"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+    <script src="app.js"></script>
+    <!-- <script src="new.js"></script> -->
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

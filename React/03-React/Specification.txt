@@ -1,0 +1,13 @@
+You will have to create a music application with React. The design is made for mobile, so don’t be fooled if it’s in the middle on a desktop. (that’s how it should be). There is a starter folder, with a db.ts file with all the data and images folder with all the images. You will have to use the ‘react-router’ to make things work like in the video.
+The design should be made with components, meaning you will have at least 6 components:
+
+-Navbar - containing the header area, which is a Link to the homepage. (note that this component is shown on every page)
+-ArtistItem - separated artist item on the homepage - which will be a link to the Artist detail page
+
+-ArtistsList - which simply lists all the ArtistItem components based on the data from db.ts.
+
+-ArtistPage - which is the detail page for each artist, containing data for it based on the data from db.ts.
+
+-AlbumsList - which lists all the images about the albums of an artist all at once. Every album image should be a Link, which will lead to a detail page about the album.
+
+-AlbumPage - which is the detail page for each album, containing data for it based on the data from db.ts.

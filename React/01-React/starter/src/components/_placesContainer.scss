@@ -1,0 +1,20 @@
+.places-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 33.333%;
+  div {
+    width: 33.333%;
+  }
+  @media (max-width: 999px) {
+    flex-basis: 50%;
+    div {
+      width: 50%;
+    }
+  }
+  @media (max-width: 426px) {
+    flex-basis: 100%;
+    div {
+      width: 100%;
+    }
+  }
+}

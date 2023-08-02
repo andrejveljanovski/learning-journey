@@ -1,0 +1,14 @@
+You will solve tasks that are used for developing logic. Solve them in order as the weight of each subsequent task increases.
+Tasks can be in one document or 3 different ones.
+
+1. Use conditions to check if a given number is even. If so , print withconsole.log “ The Number (TheNumberYouWrote) is even ". If the number is not even, print " The Number (TheNumberYouWrote) is not even".
+
+2. Check which numbers from 10 to 100 are even and divisible by 3. Print with console.log all those that meet these conditions.
+
+3. From the given 3 numbers , find the smallest and largest, and check are they prime.
+Example :
+Number = 13;
+Number2 = 15;
+Number3 = 20;
+Smallest - 13 , Largest-20
+The smallest number 13 is prime , The largest number 20 is not prime.

@@ -1,0 +1,2 @@
+Refer to the screenshots folder to see the exact look of thepage. Necessary functionality that you should include is that the navbar items should scroll the page to the section they are meant to. Ex. If you click on iPhone, the page isscrolled to the iPhone devices section.
+While hovering the navbar items, each item changes its color.

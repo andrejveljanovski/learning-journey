@@ -1,0 +1,10 @@
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+}
+@media screen and (max-width: 426px) {
+  footer {
+    margin-top: 2rem;
+  }
+}

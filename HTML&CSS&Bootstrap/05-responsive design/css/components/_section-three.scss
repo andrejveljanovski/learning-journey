@@ -1,0 +1,57 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.section-three {
+  background-color: #f7f7f7;
+  @extend %gutter;
+  .line {
+    @extend %line-properties;
+  }
+  .text {
+    @extend %wrap-small;
+
+    text-align: center;
+  }
+
+  .icons {
+    display: flex;
+    @extend %gutter;
+    @extend %wrap;
+    text-align: center;
+    i {
+      color: var.$text-color-terciary;
+      font-size: var.$font-size-big;
+    }
+    .photo,
+    .web,
+    .content {
+      padding: 2rem;
+    }
+  }
+  .form {
+    text-align: center;
+    @extend %wrap;
+    .btn {
+      background-color: var.$text-color-terciary;
+      padding: 0.6rem;
+      border-color: var.$text-color-terciary;
+      color: var.$text-color-secondary;
+    }
+    .email {
+      padding: 0.5rem;
+      width: 300px;
+    }
+  }
+  @include mix.tablet-styles {
+    .icons {
+      flex-direction: column;
+    }
+    .email {
+      margin-bottom: 1rem;
+    }
+    .btn {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

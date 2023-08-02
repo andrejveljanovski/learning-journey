@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(98, 207, 98);
+}
+
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 8px;
+  background-color: #fff;
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  color: rgb(4, 104, 4);
+  font-weight: bold;
+}
+.form-group,
+label {
+  background-color: #fff;
+}

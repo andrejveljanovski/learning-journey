@@ -1,0 +1,27 @@
+@use "../css/abstracts/mixins" as mix;
+@use "../css/abstracts/variables" as var;
+
+footer {
+  // @extend %wrap;
+  @extend %section;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var.$background-color-secondary;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    li {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: var.$text-color-secondary;
+      }
+    }
+  }
+}

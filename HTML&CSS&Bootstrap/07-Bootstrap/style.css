@@ -1,0 +1,116 @@
+/* section 2 index */
+.height75 {
+  height: 75vh;
+}
+
+.backgroud1 {
+  background-image: url(./starter-files/images/image1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.backgroud2 {
+  background-image: url(./starter-files/images/image2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.backgroud3 {
+  background-image: url(./starter-files/images/image3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.caption-caraousel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  color: #fff;
+}
+/* section 3  index*/
+.backgroud4 {
+  background-image: url(./starter-files/images/lights.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* section 5 index */
+.backgroud5 {
+  background-image: url(./starter-files/images/media.jpg);
+  background-size: cover;
+  position: relative;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* section seven */
+@media (min-width: 768px) {
+  .width-auto {
+    width: auto;
+  }
+}
+
+/* footer section index */
+.bg-black {
+  background-color: black;
+}
+
+/* about us */
+
+/* section one */
+.bg-parallax {
+  background-image: url("./starter-files/images/image1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mttopminus {
+  margin-top: -6rem;
+}
+
+/* section three */
+
+.height15 {
+  height: 15vh;
+}
+
+.min-height {
+  min-height: 140px;
+}
+/* services */
+.bgquestions {
+  background-color: #23272b;
+}
+
+.button.focus,
+.button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+/* blog */
+.bdheight {
+  height: 10px;
+}
+
+/* contact  */
+.bd-bott {
+  border-bottom: 1px solid black;
+}
+
+.nav-active-link {
+  border-left: 3px solid white;
+}

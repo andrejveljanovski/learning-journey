@@ -1,0 +1,30 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.section-one {
+  background: url(../starter-files/images/hero.jpg) no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var.$text-color-secondary;
+  h1 {
+    @extend %marginbot;
+    @extend %capitalize;
+  }
+  p {
+    @extend %marginbot;
+    font-size: var.$font-size-big;
+  }
+  a {
+    display: inline-block;
+    color: var.$text-color-secondary;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: var.$text-color-terciary;
+    @extend %uppercase;
+  }
+}

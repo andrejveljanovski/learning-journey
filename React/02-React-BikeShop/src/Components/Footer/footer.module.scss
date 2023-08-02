@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  background-color: #f5f7f9;
+  div {
+    ul {
+      li {
+        a {
+          color: black;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .socialMedia {
+      display: flex;
+      a {
+        background-color: #feb807;
+        color: white;
+        padding: 1rem;
+        font-size: 20px;
+        &:not(:last-child) {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}

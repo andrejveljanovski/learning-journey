@@ -1,0 +1,32 @@
+@use "../css/abstracts/mixins" as mix;
+@use "../css/abstracts/variables" as var;
+
+.section-one {
+  // background-image: url(../imgs/section1.jpg);
+  background: url("../imgs/section1.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+
+  .inner-section {
+    @extend %wrap;
+    p {
+      margin-bottom: 0;
+      color: var.$text-color-primary;
+    }
+    h2 {
+      color: var.$text-color-primary;
+    }
+    button {
+      // width: 7rem;
+      background-color: var.$background-color-secondary;
+      padding: 0.3rem 1rem;
+      border: none;
+      border-radius: var.$border-radius;
+      @media (max-width: 426px) {
+        width: 100%;
+      }
+    }
+  }
+}

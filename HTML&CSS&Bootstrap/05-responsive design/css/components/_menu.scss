@@ -1,0 +1,38 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  @extend %wrap;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  a {
+    color: var.$text-color-secondary;
+    text-decoration: none;
+  }
+  .logo {
+    @extend %uppercase;
+  }
+  .menu {
+    @extend %capitalize;
+    a {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+  @include mix.mobile-l-styles {
+    flex-direction: column;
+    .logo {
+      align-self: center;
+      margin-bottom: 1rem;
+    }
+    .menu {
+      align-self: center;
+    }
+  }
+}

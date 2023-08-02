@@ -1,0 +1,33 @@
+body {
+  margin-top: 56px;
+}
+.bg-img {
+  background-image: url(./starter-files/images/home.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.box-sizing {
+  box-sizing: content-box;
+}
+.pos-fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 111;
+}

@@ -1,0 +1,9 @@
+@use "../css/abstracts/mixins" as mix;
+@use "../css/abstracts/variables" as var;
+
+.place-container {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  color: var.$text-color-primary;
+}

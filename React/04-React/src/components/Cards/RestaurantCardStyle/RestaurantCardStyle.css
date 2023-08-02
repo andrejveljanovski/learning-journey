@@ -1,0 +1,53 @@
+.all-restaurants-content,
+.cuisine-details-content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 40px;
+}
+.all-restaurants-content img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.all-restaurants-content .card {
+  height: 300px;
+}
+.card {
+  background-color: #f5f5f5;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.card img {
+  height: 50%;
+  width: 100%;
+}
+.info-div {
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.card {
+  color: black;
+  position: relative;
+}
+.card .category-txt {
+  color: #ff755e;
+}
+.card i {
+  position: absolute;
+  font-size: 25px;
+  left: 5%;
+  top: 5%;
+}
+.reviews-content-div p {
+  margin-bottom: 0;
+}
+address {
+  margin: 10px 0;
+}
+@media screen and (max-width: 426px) {
+  .all-restaurants-content,
+  .cuisine-details-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}

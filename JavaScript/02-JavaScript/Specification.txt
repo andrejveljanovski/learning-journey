@@ -1,0 +1,8 @@
+You will solve a task where you will need to prompt for a name. Pass the name to a function that will find the given name from the given array. Use the found array element to print out the name in the DOM, the voting status, and the given grade. If they didn’t vote, don’t print the last row. The arrays are as follows : The output should be as follows:
+
+Antonio	Voted!	5
+
+The output for someone who didn’t vote should be like this:
+
+Marija	Didn’t vote
+

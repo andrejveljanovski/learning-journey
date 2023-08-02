@@ -1,0 +1,28 @@
+You will have to create a restaurant application with React. There is a starter folder, with a db.json. The design should be made with components::
+
+-Navbar - containing the header area, which has a Link to the homepage (the logo) and Link to the favorites-page. (note that this component is shown on every page)
+
+-Footer - footer area which contains a paragraph. (note that this component is shown on every page)
+
+-RestaurantCard - separated restaurant card item - which will be a Link to the restaurant detail page.
+
+-AllRestaurants - which simply lists all the RestaurantCard components based on the data from db.json.
+
+-RestaurantDetail - which is the detail page for each restaurant card, containing data for it based on the data from db.json. 
+
+-This page also contains a reviews section. The reviews should be fully functional. Some of the restaurants you will notice contain reviews already and some of them don’t. The rating for each restaurant is based on the review stars and shown in each of the RestaurantCard components as well as on the detail pages. 
+
+-You can add reviews with the review form and each review should be added with an ajax - PUT request back in the db.json file. 
+
+-Once you add a review the rating of the restaurant gets updated based on the new star's average score.
+
+-PopularRestaurants - lists the 10 restaurants with most reviews using the RestaurantCard component. (you can also sort them here based on the rating - that’s a plus).
+
+-SurpriseRestaurant - surprise section, which will contain a link to a  random restaurant detail page each time you click on it.
+
+-Cuisines - which simply lists button-links based on all restaurant types from the db.json.
+
+-CuisineDetail - which is the detail page for each cuisine (when you click on the buttons from the cuisines section) - filters all the restaurants based on the restaurant type from the db.json and uses the RestaurantCard component to show them on screen.
+
+-Favorites - which lists all the RestaurantCard components that are hearted - use localStorage to get this to work.
+

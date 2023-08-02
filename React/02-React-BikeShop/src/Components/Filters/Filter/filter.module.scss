@@ -1,0 +1,17 @@
+.filterDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  padding: 0;
+  li {
+    list-style: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.brand {
+  color: orange;
+}

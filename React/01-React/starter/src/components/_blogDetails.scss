@@ -1,0 +1,28 @@
+@use "../css/abstracts/mixins" as mix;
+@use "../css/abstracts/variables" as var;
+
+.block-details {
+  @extend %wrap;
+  @extend %section;
+  display: flex;
+  align-items: center;
+
+  .left {
+    flex: 0 1 auto;
+    :nth-child(1) {
+      color: var.$text-color-secondary;
+    }
+  }
+
+  .right {
+    flex: 1 0 auto;
+    img {
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+    }
+  }
+  @media (max-width: 426px) {
+    flex-direction: column;
+  }
+}

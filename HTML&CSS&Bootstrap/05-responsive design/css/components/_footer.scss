@@ -1,0 +1,30 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.footer {
+  background-color: #414a4f;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .links {
+    @extend %marginbot;
+    a {
+      color: #f7f7f7;
+      text-decoration: none;
+      font-size: var.$font-size-big;
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+  p {
+    text-align: center;
+    @extend %uppercase;
+    color: #f7f7f7b9;
+    span {
+      color: var.$text-color-secondary;
+    }
+  }
+}

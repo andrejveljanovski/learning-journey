@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  background: url(./img.jpeg) no-repeat center;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-size: cover;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-first {
+  height: 50vh;
+  color: white;
+  text-align: center;
+}
+h1 {
+  margin-top: 5rem;
+  font-size: 3rem;
+}
+p {
+  font-size: 2rem;
+}
+.keyboard-container {
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.2);
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-row,
+.second-row,
+.third-row {
+  margin-bottom: 1rem;
+}
+.space-row {
+  width: 50%;
+  text-align: center;
+}
+.text-area {
+  white-space: break-spaces;
+}
+
+button {
+  width: 7rem;
+  height: 3rem;
+  color: white;
+  border: 3px solid rgb(0, 0, 0);
+  background-color: rgba(14, 14, 14, 0.405);
+  margin-right: 5px;
+  font-weight: bold;
+}
+button:hover {
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.space-btn {
+  width: 50%;
+}
+
+@media screen and (max-width: 1025px) {
+  button {
+    width: 5rem;
+    height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  button {
+    width: 4rem;
+    height: 2rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  button {
+    width: 2rem;
+    height: 2rem;
+  }
+}

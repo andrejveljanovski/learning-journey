@@ -1,0 +1,20 @@
+@use "sass:math";
+@function rem-calc($size) {
+  @return (math.div($size, 16)) * 1rem;
+}
+// font
+
+$font-size-base: 1rem;
+$font-size-small: 0.8rem;
+$font-size-big: 1.5rem;
+
+// padding
+
+$gutter-base: rem-calc(30);
+
+//text-color
+$text-color-base: #000;
+$text-color-secondary: #fff;
+$text-color-terciary: #37a0f3;
+
+//
