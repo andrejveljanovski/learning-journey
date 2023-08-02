@@ -1,0 +1,79 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 20%;
+  color: var.$text-color-base;
+  background-color: var.$background-color-base;
+  .menu-icon {
+    display: none;
+  }
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    @extend %wrap;
+
+    img {
+      @extend %section;
+    }
+    p {
+      margin-top: auto;
+      @extend %section;
+      span {
+        font-weight: var.$font-weight-bold;
+        a {
+          @extend %links-style;
+          &:hover {
+            @extend %hover-style;
+          }
+        }
+      }
+    }
+    ul {
+      line-height: var.$line-height-base * 1.5;
+
+      padding-left: 0;
+      li {
+        list-style-type: none;
+        a {
+          @extend %links-style;
+          &:hover {
+            @extend %hover-style;
+          }
+        }
+      }
+    }
+  }
+  @include mix.tablet-styles {
+    width: 100%;
+    // max-height: 76px;
+    // z-index: 1;
+    // ne znaev dali treba na tablet i mobilen menito da bidi fixno ili ne //
+    .wrap {
+      flex-direction: row;
+      justify-content: space-between;
+      height: auto;
+      width: 100%;
+      align-items: center;
+      ul {
+        display: none;
+      }
+      p {
+        display: none;
+      }
+      .menu-icon {
+        color: var.$navbar-color;
+        display: block;
+        font-size: 1.5rem;
+        border: 1px solid var.$navbar-color;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+    }
+  }
+}
